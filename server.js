@@ -12,6 +12,8 @@ connectDB()
 
 require('dotenv').config();
 
+//user add
+
 app.post("/add" , async (req,res)=>{
     try {
         let newUser = new user ({...req.body});
@@ -27,7 +29,7 @@ app.post("/add" , async (req,res)=>{
 })
 
 
-//user add
+//user find
 
 app.get("/" , async (req,res)=>{
     try {
