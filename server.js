@@ -34,7 +34,7 @@ app.post("/add" , async (req,res)=>{
 app.get("/" , async (req,res)=>{
     try {
         let result = await user.find()
-        res.send({result,msg:'all users added'})
+        res.send({result,msg:'all users found'})
         
     } catch (error) {
         console.log(error);
